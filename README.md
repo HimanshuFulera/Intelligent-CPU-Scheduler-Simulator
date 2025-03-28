@@ -3,13 +3,13 @@
 Overview
 The Intelligent CPU Scheduler Simulator is a visualization tool for CPU scheduling algorithms, including:
 
-First-Come, First-Served (FCFS)
+1 -> First-Come, First-Served (FCFS)
 
-Shortest Job First (SJF)
+2 -> Shortest Job First (SJF)
 
-Round Robin (RR)
+3 -> Round Robin (RR)
 
-Priority Scheduling
+4 -> Priority Scheduling
 
 This simulator allows users to input process details such as arrival time, burst time, and priority, then visualizes the execution order using Gantt charts. It also computes and displays key performance metrics like average waiting time and turnaround time.
 
