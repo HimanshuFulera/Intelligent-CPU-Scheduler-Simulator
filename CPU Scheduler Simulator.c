@@ -20,7 +20,7 @@ typedef struct {
     int end_time;
 } GanttEntry;
 
-// Function prototypes
+
 int validate_inputs(Process processes[], int n, int quantum);
 void input_processes(Process processes[], int n, int algo_choice);
 void reset_processes(Process dest[], Process src[], int n);
@@ -93,7 +93,7 @@ void display_gantt_chart(GanttEntry gantt[], int count) {
     }
     printf("|\n");
     
-    // Animated visualization
+
     for (int i = 0; i < count; i++) {
         printf("\nProcessing P%d [", gantt[i].process_id);
         int duration = gantt[i].end_time - gantt[i].start_time;
@@ -657,7 +657,7 @@ int main() {
         char run_again;
         printf("\nDo you want to run another simulation? (y/n): ");
         scanf(" %c", &run_again);
-        while (getchar() != '\n'); // Clear buffer
+        while (getchar() != '\n'); 
         if (run_again != 'y' && run_again != 'Y') {
             break;
         }
