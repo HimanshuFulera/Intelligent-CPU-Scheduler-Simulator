@@ -53,7 +53,7 @@ void input_processes(Process processes[], int n, int algo_choice) {
         printf("Process %d\n", i + 1);
         printf("Arrival Time: "); scanf("%d", &processes[i].arrival);
         printf("Burst Time: "); scanf("%d", &processes[i].burst);
-        // Ask for priority if the algorithm is Priority-based
+        
         if (algo_choice == 4) {
             printf("Priority (lower number = higher priority): "); scanf("%d", &processes[i].priority);
         } else {
